@@ -1,19 +1,19 @@
-# Amava Email
+# Pegasus Emails
 
 ### Install
 
 ```bash
-$ npm install
+$ yarn install
 ```
 
 ### Development
 
 ```bash
-$ npm run dev
+$ yarn dev
 ```
 
 ### Production
 
 ```bash
-$ npm run build
+$ yarn build
 ```

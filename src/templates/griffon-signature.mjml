@@ -1,0 +1,51 @@
+<mjml>
+	<mj-head>
+		<mj-title>Signature</mj-title>
+		<mj-style> 
+			@media all and (min-width: 480px) { 
+				.content-text {    
+						border-left: 1px solid #B69C63 !important;
+				}
+				.content-text div {
+					text-align: left !important;
+				}
+				.shape-img table{
+					margin-left: auto !important;
+				}
+				.webiste-link div {
+					text-align: right !important;
+				}
+			} 
+		</mj-style>
+	</mj-head>
+  <mj-body>
+    <mj-section background-color="#ffffff" text-align="left" padding="0" >			
+      <mj-column vertical-align="middle" width="220px">
+				<mj-image src="./images/griffon-logo.png" alt="Griffon Legal" width="166px" height="166px" />		
+      </mj-column>
+			<mj-column css-class="content-text"  vertical-align="middle"  width="370px">
+				<mj-text align="center" padding-bottom="0" font-size="15px" font-weight="bold" color="#B19A6B" font-family="Helvetica" line-height="22px">
+					{{name}}
+				</mj-text>
+				<mj-text align="center" padding-top="0" font-size="15px" font-weight="normal" color="#B19A6B" font-family="Helvetica" line-height="19px">
+					{{title}}
+				</mj-text>
+				{{#each contact}}
+				{{#if @first}}
+				<mj-text align="center" padding-top="13px" font-size="14px" font-weight="normal" color="#B19A6B" font-family="Helvetica" line-height="10px">
+					<span style="color: #B19A6B;">{{type}}</span>: <a href="tel:{{value}}" style="color:#27455D; text-decoration: none;">{{value}}</a>
+				</mj-text>
+				{{else}}
+				<mj-text align="center" padding-top="4px" font-size="14px" font-weight="normal" color="#B19A6B" font-family="Helvetica" line-height="10px">
+					<span style="color: #B19A6B;">{{type}}</span>: <a href="tel:{{value}}" style="color:#27455D; text-decoration: none;">{{value}}</a>
+				</mj-text>
+				{{/if}}
+				{{/each}}
+
+				<mj-text align="center" padding-top="13px" font-size="14px" font-weight="bold" color="#27455D" font-family="Helvetica" line-height="10px">
+					<a href="https://www.griffonlegal.co.za" style="color:#27455D; text-decoration: none;">www.griffonlegal.co.za</a>
+				</mj-text>
+			</mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

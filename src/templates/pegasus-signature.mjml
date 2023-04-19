@@ -1,0 +1,116 @@
+<mjml>
+	<mj-head>
+		<mj-title>Signature</mj-title>
+		<mj-style> 
+			@media all and (min-width: 480px) { 
+				.content-text {    
+				}
+				.content-text div {
+					text-align: left !important;
+				}
+				.shape-img table{
+					margin-left: auto !important;
+				}
+				.webiste-link div {
+					text-align: right !important;
+				}
+			} 
+		</mj-style>
+	</mj-head>
+  <mj-body>
+    <mj-section background-color="#ffffff" text-align="left" padding="0" >			
+      <mj-column  vertical-align="middle" width="200px" padding="0" background-color="#181E2E" >
+				<mj-image src="./images/pegasus-logo.png" alt="Pegasus Consulting" width="200px" height="200px" padding="0" />		
+      </mj-column>
+			<mj-column css-class="content-text" width="400px"  vertical-align="middle" padding="0" padding-left="20px" padding-right="30px">
+				<mj-text align="center" padding="0" font-size="16px" font-weight="normal" color="#043F5C" font-family="Helvetica" line-height="22px">
+					{{name}}
+				</mj-text>
+				<mj-text align="center" padding="0" font-size="15px" font-weight="normal" color="#B19A6B" font-family="Helvetica" line-height="19px">
+					{{title}}
+				</mj-text>
+
+				<mj-text align="center" padding="0" font-size="12px" font-weight="normal" color="#043F5C" font-family="Helvetica" line-height="19px">
+					{{{subtitle}}}
+				</mj-text>
+
+
+
+				{{#if isCeo}}
+        <mj-divider border-width="1px" border-style="solid" border-color="#B69B66" padding="0" padding-top="10px" />
+				{{else}}
+				{{#if subtitle}} 
+        	<mj-divider border-width="1px" border-style="solid" border-color="#B69B66" padding="0" padding-top="9px" />
+				{{else}}
+				<mj-divider border-width="1px" border-style="solid" border-color="#B69B66" padding="0" padding-top="14px" />
+				{{/if}}
+				{{/if}}
+				
+				{{#if isCeo}}
+					{{#each contact}}
+						{{#if isEmail}}
+							<mj-text align="center" padding="0"  padding-top="12px" font-size="12px" font-weight="normal" color="#B19A6B" font-family="Helvetica" line-height="10px">
+								<span style="color: #B19A6B; ">{{type}}.</span> <a href="mailto:{{value}}" style="color:#27455D; text-decoration: none;">{{value}}</a>
+							</mj-text>
+						{{/if}}
+					{{/each}}
+
+					<mj-text align="center" padding="0"  padding-top="12px" font-size="12px" font-weight="normal" color="#B19A6B" font-family="Helvetica" line-height="10px">
+					{{#each contact}}					
+						{{#if isContact}}
+							<span style="color: #B19A6B; ">{{type}}.</span> <a href="mailto:{{value}}" style="color:#27455D; text-decoration: none;">{{value}}</a>
+							{{#if @last}}
+							{{else}}
+								<span style="color: #27455D; "> // </span>
+							{{/if}}
+						{{/if}}
+					{{/each}}
+				</mj-text>
+				{{else}}
+					{{#each contact}}
+					{{#if isEmail}}
+						<mj-text align="center" padding="0"  padding-top="12px" font-size="12px" font-weight="normal" color="#B19A6B" font-family="Helvetica" line-height="10px">
+							<span style="color: #B19A6B; ">{{type}}.</span> <a href="mailto:{{value}}" style="color:#27455D; text-decoration: none;">{{value}}</a>
+						</mj-text>
+						{{/if}}
+						{{#if isContact}}
+						<mj-text align="center" padding="0"  padding-top="12px" font-size="12px" font-weight="normal" color="#B19A6B" font-family="Helvetica" line-height="10px">
+							<span style="color: #B19A6B; ">{{type}}.</span> <a href="mailto:{{value}}" style="color:#27455D; text-decoration: none;">{{value}}</a>
+						</mj-text>
+						{{/if}}
+					{{/each}}
+				{{/if}}
+				<!-- <mj-text align="center" padding="0" padding-top="10px" font-size="12px" font-weight="normal" color="#27455D" font-family="Helvetica" line-height="10px">
+					<span style="color: #B19A6B;">c.</span> <a href="tel:074 102 2033" style="color:#27455D; text-decoration: none;">074 102 2033</a>
+					//
+					<span style="color: #B19A6B;">t.</span> <a href="tel:010 015 0574" style="color:#27455D; text-decoration: none;">010 015 0574</a>
+				</mj-text> -->
+
+				{{#if isCeo}}
+				<mj-text align="center" padding="0" padding-top="13px" font-size="14px" font-weight="normal" color="#B69B66" font-family="Helvetica" line-height="10px">
+					<a href="https://www.pegasusconsulting.co.za" style="color:#B69B66; text-decoration: none;">www.pegasusconsulting.co.za</a>
+				</mj-text>
+				{{/if}}
+
+
+				{{#if isCeo}}
+        <mj-divider border-width="1px" border-style="solid" border-color="#B69B66" padding="0" padding-top="10px" />
+				{{else}}
+        <mj-divider border-width="1px" border-style="solid" border-color="#B69B66" padding="0" padding-top="14px" />
+				{{/if}}
+
+				{{#if isCeo}}
+				<mj-text align="center" padding="0" padding-top="8px" font-size="12px" line-height="14px" font-weight="normal" color="#043F5C" font-family="Helvetica" line-height="10px">
+					Member of The South African Institute of Tax Practitioners 10990390
+					Business Accountant in Practice (SA) 219
+				</mj-text>
+				{{else}}
+				<mj-text align="center" padding="0" padding-top="13px" font-size="14px" font-weight="normal" color="#B69B66" font-family="Helvetica" line-height="10px">
+					<a href="https://www.pegasusconsulting.co.za" style="color:#B69B66; text-decoration: none;">www.pegasusconsulting.co.za</a>
+				</mj-text>
+
+				{{/if}}
+			</mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

@@ -23,7 +23,7 @@ export default [
   },
   {
     name: "ANDREA BARRETT",
-    title: "Operations Manager",
+    title: "Client Liaison Manager",
     contact: [
       { type: "t", value: "+ 27 (0) 74 360 7275" },
       { type: "c", value: "+ 27 (0) 10 015 0574" },
@@ -49,7 +49,7 @@ export default [
     ],
   },
   {
-    name: "MICHELLE DU TOIT",
+    name: "MICHELLE MOUTON",
     title: "Junior Accountant",
     contact: [
       { type: "t", value: "+ 27 (0) 83 570 1854" },
@@ -158,6 +158,14 @@ export default [
     contact: [
       { type: "t", value: "+27 (0) 82 327 6515" },
       { type: "c", value: "+ 27 (0) 10 015 0574" },
+    ],
+  },
+  {
+    name: "FRANCOIS MARAIS",
+    title: "Junior Accountant",
+    contact: [
+      { type: "t", value: "+27 (0) 83 784 0195" },
+      { type: "c", value: "+ 27 (0) 10 015 0574" },
     ],
   },
 ] satisfies Pegasus[];

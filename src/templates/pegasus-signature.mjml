@@ -58,7 +58,7 @@
 					<mj-text align="center" padding="0"  padding-top="12px" font-size="12px" font-weight="normal" color="#B19A6B" font-family="Helvetica" line-height="10px">
 					{{#each contact}}					
 						{{#if isContact}}
-							<span style="color: #B19A6B; ">{{type}}.</span> <a href="mailto:{{value}}" style="color:#27455D; text-decoration: none;">{{value}}</a>
+							<span style="color: #B19A6B; ">{{type}}.</span> <a href="tel:{{value}}" style="color:#27455D; text-decoration: none;">{{value}}</a>
 							{{#if @last}}
 							{{else}}
 								<span style="color: #27455D; "> // </span>
@@ -75,7 +75,7 @@
 						{{/if}}
 						{{#if isContact}}
 						<mj-text align="center" padding="0"  padding-top="12px" font-size="12px" font-weight="normal" color="#B19A6B" font-family="Helvetica" line-height="10px">
-							<span style="color: #B19A6B; ">{{type}}.</span> <a href="mailto:{{value}}" style="color:#27455D; text-decoration: none;">{{value}}</a>
+							<span style="color: #B19A6B; ">{{type}}.</span> <a href="tel:{{value}}" style="color:#27455D; text-decoration: none;">{{value}}</a>
 						</mj-text>
 						{{/if}}
 					{{/each}}

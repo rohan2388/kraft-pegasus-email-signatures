@@ -20,6 +20,8 @@ import { join, resolve } from "path";
   if (existsSync(dist)) {
     rmdirSync(dist, { recursive: true });
     mkdirSync(dist);
+  } else {
+    mkdirSync(dist);
   }
 
   // Generate emails

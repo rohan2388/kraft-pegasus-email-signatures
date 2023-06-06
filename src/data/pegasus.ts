@@ -168,4 +168,20 @@ export default [
       { type: "c", value: "+ 27 (0) 10 015 0574" },
     ],
   },
+  {
+    name: "ARNÉ VENTER",
+    title: "Account Manager",
+    contact: [
+      { type: "t", value: "+27 (0) 61 667 8626" },
+      { type: "c", value: "+ 27 (0) 10 015 0574" },
+    ],
+  },
+  {
+    name: "NIKITA OLIVEIRA",
+    title: "Junior Accountant",
+    contact: [
+      { type: "t", value: "+27 (0) 83 291 7304" },
+      { type: "c", value: "+ 27 (0) 10 015 0574" },
+    ],
+  },
 ] satisfies Pegasus[];

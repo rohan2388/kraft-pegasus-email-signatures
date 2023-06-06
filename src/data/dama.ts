@@ -35,4 +35,18 @@ export default [
       },
     ],
   },
+  {
+    name: "ANDREA BARRETT",
+    title: "Client Liaison Manager",
+    contact: [
+      {
+        type: "c",
+        value: "+ 27 (0) 74 360 7275",
+      },
+      {
+        type: "t",
+        value: "+ 27 (0) 10 015 0574",
+      },
+    ],
+  },
 ] as User[];

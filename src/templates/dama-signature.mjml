@@ -2,7 +2,7 @@
 	<mj-head>
 		<mj-title>Signature</mj-title>
 		<mj-style> 
-			@media all and (min-width: 480px) { 
+			@media all and (min-width: 5px) { 
 				.content-text {    
 						border-left: 1px solid #B69C63 !important;
 				}
@@ -17,8 +17,12 @@
 				}
 			} 
 		</mj-style>
+		<mj-breakpoint width="5px" />
 	</mj-head>
   <mj-body>
+		<mj-raw>
+			<div style="width:600px;">
+		</mj-raw>
     <mj-section background-color="#ffffff" text-align="left" padding="0" >			
       <mj-column vertical-align="middle" width="220px">
 				<mj-image src="./images/dama-logo.png" alt="Griffon Legal" width="117px" height="166px" />		
@@ -47,5 +51,9 @@
 				</mj-text>
 			</mj-column>
     </mj-section>
+
+		<mj-raw>
+		</div>
+		</mj-raw>
   </mj-body>
 </mjml>

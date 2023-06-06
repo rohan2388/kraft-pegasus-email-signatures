@@ -51,7 +51,13 @@
 				</mj-text>
 			</mj-column>
     </mj-section>
-
+		<mj-section background-color="#fff" padding="17px">
+			<mj-column padding="0">
+				<mj-text padding="0" color="#043F5C" font-size="9px" font-style="italic" font-weight="300">
+					The information contained in this communication is confidential and may be legally privileged. It is intended solely for the use of the individual or entity to whom it is addressed and others authorised to receive it. If you are not the intended recipient you are hereby notified that any disclosure, copying, distribution or taking action in reliance of the contents of this information is strictly prohibited and may be unlawful. The company is neither liable for the information contained in this communication, any delay in its receipt or that the mail is virus-free.
+				</mj-text>
+			</mj-column>			
+		</mj-section>
 		<mj-raw>
 		</div>
 		</mj-raw>

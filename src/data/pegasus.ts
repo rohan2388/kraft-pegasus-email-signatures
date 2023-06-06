@@ -32,7 +32,7 @@ export default [
   {
     name: "MARYKE OBERHOLZER",
     title: "Technical Manager & HR",
-    subtitle: "Bcom Management",
+    subtitle: "Bcom Management Accounting",
     contact: [
       { type: "t", value: "+ 27 (0) 76 815 1586" },
       { type: "c", value: "+ 27 (0) 10 015 0574" },
@@ -42,7 +42,7 @@ export default [
     name: "ANIKA NELL",
     title: "Training Officer & Account Manager",
     subtitle:
-      "Professional Accounting Technician (SA) - <br/> SAIPA Professional Tax Technician (SA)",
+      "Professional Accounting Technician (SA) - SAIPA <br/>Professional Tax Technician (SA)",
     contact: [
       { type: "t", value: "+ 27 (0) 71 312 3846" },
       { type: "c", value: "+ 27 (0) 10 015 0574" },
@@ -50,7 +50,7 @@ export default [
   },
   {
     name: "MICHELLE MOUTON",
-    title: "Junior Accountant",
+    title: "Account Manager",
     contact: [
       { type: "t", value: "+ 27 (0) 83 570 1854" },
       { type: "c", value: "+ 27 (0) 10 015 0574" },
@@ -65,10 +65,10 @@ export default [
     ],
   },
   {
-    name: "DOMINIQUE RUDOLPH",
+    name: "DOMINIQUE OLIVIER",
     title: "Account Manager",
     contact: [
-      { type: "t", value: "+ 27 (0) 60 660 6985" },
+      { type: "t", value: "+ 27 (0) 74 256 2017" },
       { type: "c", value: "+ 27 (0) 10 015 0574" },
     ],
   },
@@ -153,7 +153,7 @@ export default [
     ],
   },
   {
-    name: "RONEL LOMBART",
+    name: "RONEL LOMBARD",
     title: "Junior Accountant",
     contact: [
       { type: "t", value: "+27 (0) 82 327 6515" },
@@ -165,7 +165,7 @@ export default [
     title: "Junior Accountant",
     contact: [
       { type: "t", value: "+27 (0) 83 784 0195" },
-      { type: "c", value: "+ 27 (0) 10 015 0574" },
+      { type: "c", value: "+ 27 (0) 10 015 0574" },
     ],
   },
 ] satisfies Pegasus[];

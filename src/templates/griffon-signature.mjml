@@ -2,7 +2,7 @@
 	<mj-head>
 		<mj-title>Signature</mj-title>
 		<mj-style> 
-			@media all and (min-width: 480px) { 
+			@media all and (min-width: 5px) { 
 				.content-text {    
 						border-left: 1px solid #B69C63 !important;
 				}
@@ -17,13 +17,17 @@
 				}
 			} 
 		</mj-style>
+		<mj-breakpoint width="5px" />
 	</mj-head>
   <mj-body>
+		<mj-raw>
+			<div style="width:600px;">
+		</mj-raw>
     <mj-section background-color="#ffffff" text-align="left" padding="0" >			
       <mj-column vertical-align="middle" width="220px">
 				<mj-image src="./images/griffon-logo.png" alt="Griffon Legal" width="166px" height="166px" />		
       </mj-column>
-			<mj-column css-class="content-text"  vertical-align="middle"  width="370px">
+			<mj-column css-class="content-text"  vertical-align="middle"  width="370px" padding="12px 0">
 				<mj-text align="center" padding-bottom="0" font-size="15px" font-weight="bold" color="#B19A6B" font-family="Helvetica" line-height="22px">
 					{{name}}
 				</mj-text>
@@ -42,10 +46,13 @@
 				{{/if}}
 				{{/each}}
 
-				<mj-text align="center" padding-top="13px" font-size="14px" font-weight="bold" color="#27455D" font-family="Helvetica" line-height="10px">
+				<!-- <mj-text align="center" padding-top="13px" font-size="14px" font-weight="bold" color="#27455D" font-family="Helvetica" line-height="10px">
 					<a href="https://www.griffonlegal.co.za" style="color:#27455D; text-decoration: none;">www.griffonlegal.co.za</a>
-				</mj-text>
+				</mj-text> -->
 			</mj-column>
     </mj-section>
+		<mj-raw>
+		</div>
+		</mj-raw>
   </mj-body>
 </mjml>
